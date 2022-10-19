@@ -1,0 +1,304 @@
+p, h1, h2, button, label{
+    font-family: Nunito; 
+  }
+  
+  h2, h1{
+    position: relative; 
+    top: 25px; 
+  }
+  
+  a{
+    text-decoration: none; 
+    font-family: Nunito;
+  }
+  
+  .container{
+    margin: 3%; 
+    display: grid; 
+    grid-template-areas:
+      "i1 i1 i15"
+      "i2 i2 i15"
+      "i3 i3 i15"
+      "i4 i5 i15"
+      "iA iA i15"
+      "i6 i6 i15"
+      "i7 i7 i15"
+      "i8 i8 i15"
+      "i9 i9 i15"
+      "i10 i10 i15"
+      "i11 i12 i15";
+    background-color: lightblue; 
+    border-radius: 20px; 
+    box-shadow: 5px 10px 20px #6b6b6bff; 
+  }
+  
+  .epic{
+    position: relative; 
+    top: 200px; 
+    left: 40px; 
+    color: white; 
+    width: 70%; 
+  }
+  
+  .item{   /* all items minus Email, Password, Reset and Submit. */
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    padding-left: 40px; 
+  }
+  
+  .itemQ{   /* Email, Password, Reset and Submit. */
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    padding-left: 40px; 
+  }
+  
+  .item1{
+    grid-area: i1; 
+  }
+  .item2{
+    grid-area: i2; 
+  }
+  .item3{
+    grid-area: i3; 
+  }
+  .item4{
+    grid-area: i4; 
+  }
+  .item5{
+    grid-area: i5; 
+  }
+  .item6{
+    grid-area: i6; 
+  }
+  .item7{
+    grid-area: i7; 
+  }
+  .item8{
+    grid-area: i8; 
+  }
+  .item9{
+    grid-area: i9; 
+  }
+  .item10{ 
+    grid-area: i10; 
+  }
+  .item11{
+    grid-area: i11;
+    margin-top: 30px; 
+    margin-bottom: 40px; 
+  }
+  .item12{
+    grid-area: i12;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+  }
+  .item15{
+    grid-area: i15;  
+    background-image: url("assets/ski.jpeg");
+    background-size: cover;
+    background-position: 80% 0; 
+    border-radius: 0 20px 20px 0; 
+  }
+  .itemA{
+    grid-area: iA;
+  }
+  
+  .required{
+    color: red; 
+    font-size: 12px;
+    text-align: center; 
+  }
+  
+  .aboutYourselfTextBox{
+    width: 90%; 
+    height: 100px; 
+    border-radius: 8px;  
+    background-color: #E2E5ED;
+    border: none;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium; 
+  }
+
+  .tellUs{
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    padding-left: 40px;
+  }
+  
+  .inputFields{
+    width: 90%; 
+    border-radius: 8px; 
+    height: 40px; 
+    background-color: #E2E5ED;
+    border: none; 
+  }
+  
+  input:focus{
+    outline: none;
+  }
+  
+  .inputFields:invalid{  /* makes email red on invalid email */
+    border: solid 2px red; 
+  }
+  
+  .important:focus{  /* highlights border on active */
+    border: solid 3px gray; 
+  }
+  
+  .important{  /* width of Name and surname input */
+    border: solid 3px transparent;
+  }
+  
+  select{
+    width: 90%; 
+    border-radius: 8px; 
+    height: 40px; 
+    background-color: #E2E5ED;
+    border: none;
+  }
+  
+  #reset{
+    width: 85%; 
+    text-align: center; 
+    color: black; 
+    height: 40px; 
+    border-radius: 8px; 
+    background-color: #ffff; 
+    border: solid 3px transparent; 
+    cursor: pointer;
+    font-size: 18px; 
+  }
+  #reset:hover{
+    border: solid 3px gray; 
+  }
+  #submit{
+    color: white; 
+    width: 85%; 
+    text-align: center;  
+    height: 40px; 
+    border-radius: 8px; 
+    background-color: #149770; 
+    border: solid 3px transparent;  
+    cursor: pointer;
+    font-size: 18px; 
+  }
+  #submit:hover{ 
+    border: solid 3px white;
+  }
+
+  .age[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+  }
+  .age[type="checkbox"]:checked{
+    height: 23px;
+    width: 23px;
+    transition: all .5s;
+    background-color: #149770;
+  }
+  .equipment[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    height: 23px;
+    width: 23px;
+  }
+  .equipment[type="checkbox"]:checked{
+    height: 23px;
+    width: 23px;
+    transition: all .5s;
+    background-color: #149770;
+  }
+  
+  .check{
+    display: block;
+    position: relative;
+  }
+  
+  .check > input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .checkText{ /* text for checkbox position properly */
+    position: relative; 
+    left: 40px; 
+    top: 5px; 
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 800px){  
+    .container{
+    grid-template-areas:
+      "i1 i1 i1 i1"
+      "i2 i2 i2 i2"
+      "i3 i3 i3 i3"
+      "i4 i4 i4 i4"
+      "i5 i5 i5 i5"
+      "iA iA iA iA"
+      "i6 i6 i6 i6"
+      "i7 i7 i7 i7"
+      "i8 i8 i8 i8"
+      "i9 i9 i9 i9"
+      "i10 i10 i10 i10"
+      "i11 i11 i12 i12"
+      "i15 i15 i15 i15";
+      background-image: url("assets/ski.jpeg");
+      background-size: cover;
+      background-position: 80% 0; 
+  }
+
+  .ageSpan:hover{
+    background-color: none;
+  }
+
+  .equipmentSpan:hover{
+    background-color: none;
+  }
+
+  .tellUs{
+    padding-left: 20px;
+    text-align: start;
+  }
+
+  .mainHeader{
+    font-size: 27px;
+  }
+
+  .item7, .item8{
+    margin: 0 10px;
+    background-color: rgb(194, 194, 194, 0.7);
+    padding-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+    .item15{
+      display: none; 
+    }
+  
+    .item6, .item10{
+      background-color: rgb(194, 194, 194, 0.7);
+      padding-bottom: 15px; 
+      border-radius: 10px;
+      margin: 20px 10px;
+      padding-left: 10px;
+    }
+  
+    .item, .itemQ{
+    margin-left: 10px;
+    padding-left: 10px;
+    }
+  
+    h2, h1{
+      top: 8px; 
+    }
+  
+  }
+  
